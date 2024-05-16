@@ -2,11 +2,13 @@ public class Kayak extends Vehicle implements IWaterVehicle {
 
     private int numberOfPaddles;
     private IWaterVehicle waterVehicle;
+    private String hullType;
+
 
     public Kayak(float weight, int maxSpeed){
         super(weight, maxSpeed);
         this.numberOfPaddles = 1;
-
+        this.hullType = "carbon fibre";
     }
 
     public IWaterVehicle getWaterVehicle(){
@@ -18,11 +20,11 @@ public class Kayak extends Vehicle implements IWaterVehicle {
     }
 
     public String getHullType(){
-        return this.getHullType();
+        return this.hullType;
     }
 
     public void setHullType(String hullType){
-        this.waterVehicle.setHullType(hullType);
+        this.hullType = hullType;
     }
 
     public int getNumberOfPaddles() {

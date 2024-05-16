@@ -4,10 +4,12 @@ public class CargoShip extends Vehicle implements IWaterVehicle,IEngine {
     private int numberOfContainers;
     private IWaterVehicle waterVehicle;
     private IEngine engine;
+    private String hullType;
 
     public CargoShip(float weight, int maxSpeed, int numberOfContainers, IEngine engine){
         super(weight, maxSpeed);
         this.numberOfContainers = numberOfContainers;
+        this.hullType = "aluminium";
         this.engine = engine;
     }
 
@@ -35,11 +37,11 @@ public class CargoShip extends Vehicle implements IWaterVehicle,IEngine {
     }
 
     public String getHullType(){
-        return this.getHullType();
+        return this.hullType;
     }
 
     public void setHullType(String hullType){
-        this.waterVehicle.setHullType(hullType);
+        this.hullType = hullType;
     }
 
     public int getNumberOfContainers() {

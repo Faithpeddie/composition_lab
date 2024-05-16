@@ -3,10 +3,12 @@ public class Speedboat extends Vehicle implements IWaterVehicle, IEngine {
     private boolean needsCrew;
     private IWaterVehicle waterVehicle;
     private IEngine engine;
+    private String hullType;
 
     public Speedboat(float weight, int maxSpeed, boolean needsCrew, IEngine engine){
         super(weight, maxSpeed);
         this.needsCrew = needsCrew;
+        this.hullType = "carbon fibre";
         this.engine = engine;
     }
 
@@ -34,11 +36,11 @@ public class Speedboat extends Vehicle implements IWaterVehicle, IEngine {
     }
 
     public String getHullType(){
-        return this.getHullType();
+        return this.hullType;
     }
 
     public void setHullType(String hullType){
-        this.waterVehicle.setHullType(hullType);
+        this.hullType = hullType;
     }
 
     public boolean getNeedsCrew() {
