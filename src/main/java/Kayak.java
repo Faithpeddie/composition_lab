@@ -12,9 +12,11 @@ public class Kayak extends Vehicle implements IWaterVehicle {
     public IWaterVehicle getWaterVehicle(){
         return this.waterVehicle;
     }
+
     public void setWaterVehicle(IWaterVehicle waterVehicle){
         this.waterVehicle = waterVehicle;
     }
+
     public String getHullType(){
         return this.getHullType();
     }
@@ -22,9 +24,6 @@ public class Kayak extends Vehicle implements IWaterVehicle {
     public void setHullType(String hullType){
         this.waterVehicle.setHullType(hullType);
     }
-
-
-
 
     public int getNumberOfPaddles() {
         return numberOfPaddles;

@@ -36,7 +36,7 @@ public class Bus extends Vehicle implements ILandVehicle, IEngine {
     }
 
     public int getHorsePower(){
-        this.engine.getHorsePower();
+        return this.engine.getHorsePower();
     }
 
     public void setHorsePower(int horsePower){
