@@ -1,3 +1,7 @@
+
+import air.Helicopter;
+import air.Plane;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -25,6 +29,11 @@ public class Runner {
         System.out.println(speedy.getHorsePower());
 
 
+        Plane dart = new Plane(250,true);
+        System.out.println(dart.getNumberOfEngines());
+
+        Helicopter spinny = new Helicopter(20,2,"Greg");
+        System.out.println(spinny.getNumberOfEngines());
 
 
     }

@@ -11,11 +11,20 @@ public class Helicopter implements IAirVehicle{
         this.numberOfWindows = numberOfWindows;
         this.numberOfRotorBlades = numberOfRotorBlades;
         this.pilot = pilot;
+        this.numberOfEngines = 2;
+    }
+
+
+    public int getNumberOfEngines() {
+        return this.numberOfEngines;
+    }
+
+    public void setNumberOfEngines(int numberOfEngines) {
         this.numberOfEngines = numberOfEngines;
     }
 
     public int getNumberOfWindows() {
-        return this.numberOfWindows
+        return this.numberOfWindows;
     }
 
     public void setNumberOfWindows(int numberOfWindows) {
