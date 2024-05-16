@@ -19,8 +19,8 @@ public class Runner {
 
         System.out.println(speedy.getHorsePower());
 
-        IEngine electricEngine2 = new ElectricEngine(1000,100);
-        speedy.setEngine(electricEngine);
+        IEngine electricEngine2 = new ElectricEngine(1111,100);
+        speedy.setEngine(electricEngine2);
 
         System.out.println(speedy.getHorsePower());
 
