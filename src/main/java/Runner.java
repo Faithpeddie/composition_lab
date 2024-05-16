@@ -10,6 +10,23 @@ public class Runner {
         jazz.setEngine(electricEngine);
 
         System.out.println(jazz.getHorsePower());
+
+
+
+
+        IEngine mcClarenEngine = new CombustionEngine(80, "10/01/2023");
+        Speedboat speedy = new Speedboat(2000.0f, 140, true, mcClarenEngine);
+
+        System.out.println(speedy.getHorsePower());
+
+        IEngine electricEngine2 = new ElectricEngine(1000,100);
+        speedy.setEngine(electricEngine);
+
+        System.out.println(speedy.getHorsePower());
+
+
+
+
     }
 
 }
